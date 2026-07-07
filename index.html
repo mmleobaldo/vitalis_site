@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitalis Empreendimentos | Construindo Conquistas com Solidez e Confiança</title>
+    <meta name="description" content="Vitalis Empreendimentos - Mais de 20 anos desenvolvendo empreendimentos residenciais únicos, com solidez e confiança, na Grande São Paulo">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="./assets/css/style.css" as="style">
+    <link rel="preload" href="./assets/js/script.js" as="script">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- PWA Meta -->
+    <meta name="theme-color" content="#012221">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Performance Hints -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+</head>
+<body class="loading">
+    <!-- Loading Screen -->
+    <div id="loading" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <svg viewBox="0 0 220 180" class="logo-animation">
+                    <path d="M14,108 L86,46 L152,104 M18,105 L18,162 M148,101 L148,162 M10,162 L152,162"/>
+                    <path d="M128,162 L128,88 M116,92 L128,74 M128,88 L150,100 M150,162 L150,100 M168,162 L168,66 L200,30 L200,162 M122,162 L206,162"/>
+                </svg>
+            </div>
+            <div class="loading-progress">
+                <div class="progress-bar"></div>
+            </div>
+            <p class="loading-text">Construindo conquistas com solidez e confiança</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <svg viewBox="0 0 220 180" class="logo">
+                    <path d="M14,108 L86,46 L152,104 M18,105 L18,162 M148,101 L148,162 M10,162 L152,162"/>
+                    <path d="M128,162 L128,88 M116,92 L128,74 M128,88 L150,100 M150,162 L150,100 M168,162 L168,66 L200,30 L200,162 M122,162 L206,162"/>
+                </svg>
+                <span class="logo-wordmark">
+                    <span class="logo-name">Vitalis</span>
+                    <span class="logo-subtitle">Empreendimentos</span>
+                </span>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Início</a>
+                <a href="#about" class="nav-link">Empresa</a>
+                <a href="#projects" class="nav-link">Projetos</a>
+                <a href="#services" class="nav-link">Serviços</a>
+                <a href="#contact" class="nav-link">Contato</a>
+                
+                <!-- Theme Toggle for Mobile -->
+                <div class="nav-theme-toggle">
+                    <button class="theme-toggle mobile-theme-toggle" id="mobile-theme-toggle" aria-label="Alternar tema" role="switch" aria-checked="false">
+                        <div class="theme-toggle-switch">
+                            <div class="theme-toggle-slider">
+                                <svg class="theme-icon sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                                <svg class="theme-icon moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <span class="theme-toggle-text">Modo Escuro</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
+                    <svg class="theme-icon sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="theme-icon moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+
+        <div class="hero-container">
+            
+            <div class="hero-content" data-aos="fade-up">
+                <h1 class="hero-title">
+                    <span class="title-line">Construindo</span>
+                    <span class="title-line highlight">Conquistas</span>
+                    <span class="title-line">com Confiança</span>
+                </h1>
+                <p class="hero-description">
+                    Há mais de 20 anos desenvolvendo empreendimentos únicos para venda e locação,
+                    com a solidez e a confiança que transformam cada imóvel em uma conquista na Grande São Paulo.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="stat-number" data-count="5">0</div>
+                        <div class="stat-label">Anos de Experiência</div>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-number" data-count="5">0</div>
+                        <div class="stat-label">Projetos Concluídos</div>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-number" data-count="30">0</div>
+                        <div class="stat-label">Famílias Atendidas</div>
+                    </div>
+                </div>
+                <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Ver Empreendimentos</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7,7 17,7 17,17"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Quero Comprar</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+           
+           
+        </div>
+        
+        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="800">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Role para descobrir</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Nossa História</span>
+                <h2 class="section-title">Mais de 20 anos construindo <span class="text-gradient">conquistas</span></h2>
+                <p class="section-description">
+                    A Vitalis Empreendimentos nasce de um movimento de evolução: unir a experiência consolidada
+                    no mercado imobiliário a uma marca que representa com precisão nossos valores, visão e propósito.
+                </p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content" data-aos="fade-right">
+                    <div class="timeline">
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="timeline-year">2004</div>
+                            <div class="timeline-content">
+                                <h3>Fundação</h3>
+                                <p>Iniciamos com foco no desenvolvimento de imóveis residenciais de qualidade.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="timeline-year">2010</div>
+                            <div class="timeline-content">
+                                <h3>Primeiro Empreendimento</h3>
+                                <p>Lançamos nosso primeiro condomínio residencial na zona sul de São Paulo.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="timeline-year">2018</div>
+                            <div class="timeline-content">
+                                <h3>Portfólio Consolidado</h3>
+                                <p>Mais de 50 empreendimentos entregues para venda e locação.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="timeline-year">2026</div>
+                            <div class="timeline-content">
+                                <h3>Vitalis Empreendimentos</h3>
+                                <p>A marca evolui para refletir com mais precisão nossos valores, solidez e visão de futuro.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual" data-aos="fade-left">
+                    <div class="feature-cards">
+                        <div class="feature-card" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12,2 22,8.5 22,15.5 12,22 2,15.5 2,8.5"></polygon>
+                                    <line x1="12" y1="22" x2="12" y2="15.5"></line>
+                                    <polyline points="22,8.5 12,15.5 2,8.5"></polyline>
+                                </svg>
+                            </div>
+                            <h3>Tecnologia 3D</h3>
+                            <p>Modelagem e visualização em realidade virtual</p>
+                        </div>
+                        <div class="feature-card" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7L12 12L22 7L12 2Z"></path>
+                                    <path d="M2 17L12 22L22 17"></path>
+                                    <path d="M2 12L12 17L22 12"></path>
+                                </svg>
+                            </div>
+                            <h3>Smart Building</h3>
+                            <p>Automação e IoT em cada empreendimento</p>
+                        </div>
+                        <div class="feature-card" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 12H18L15 21L9 3L6 12H2"></path>
+                                </svg>
+                            </div>
+                            <h3>Sustentabilidade</h3>
+                            <p>100% dos projetos com certificação verde</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Portfolio</span>
+                <h2 class="section-title">Nossos <span class="text-gradient">Empreendimentos</span></h2>
+                <p class="section-description">
+                    Apartamentos e casas desenvolvidos com exclusividade pela Vitalis,
+                    disponíveis para venda e locação na Grande São Paulo.
+                </p>
+            </div>
+            
+            <div class="project-filters" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="in-progress">Projetos Em Andamento</button>
+                <button class="filter-btn" data-filter="delivered">Projetos Concluídos</button>
+            </div>
+            
+            <div class="projects-grid" id="projects-grid">
+                <article class="project-card" data-category="luxury residential" data-status="delivered" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="./assets/img/obra1.avif" alt="Edifício Inovação" loading="lazy">
+                        <img src="./assets/img/obra1.avif" alt="Edifício Inovação - foto 2" hidden>
+                        <img src="./assets/img/obra1.avif" alt="Edifício Inovação - foto 3" hidden>
+                        <img src="./assets/img/obra1.avif" alt="Edifício Inovação - foto 4" hidden>
+                        <img src="./assets/img/obra1.avif" alt="Edifício Inovação - foto 5" hidden>
+                        <img src="./assets/img/obra1.avif" alt="Edifício Inovação - foto 6" hidden>
+                        <img src="./assets/img/obra1.avif" alt="Edifício Inovação - foto 7" hidden>
+                        <img src="./assets/img/obra1.avif" alt="Edifício Inovação - foto 8" hidden>
+                        <div class="project-overlay">
+                            <div class="project-badges">
+                                <span class="badge badge-status delivered">Entregue</span>
+                                <span class="badge badge-category">Luxo</span>
+                            </div>
+                            <div class="project-actions">
+                                <button type="button" class="btn-icon" title="Ver Detalhes" data-modal-trigger>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 12S5 4 12 4S23 12 23 12S19 20 12 20S1 12 1 12Z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Edifício Inovação</h3>
+                        <p class="project-description">Residencial de alto padrão com tecnologia smart home integrada</p>
+                        <div class="project-specs">
+                            <div class="spec-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 9L12 2L21 9V20A2 2 0 0 1 19 22H5A2 2 0 0 1 3 20V9Z"></path>
+                                    <polyline points="9,22 9,12 15,12 15,22"></polyline>
+                                </svg>
+                                <span>2-3 quartos</span>
+                            </div>
+                            <div class="spec-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 6L9 4A2 2 0 0 1 11 2H13A2 2 0 0 1 15 4V6"></path>
+                                    <path d="M20 12V8A2 2 0 0 0 18 6H6A2 2 0 0 0 4 8V12"></path>
+                                    <path d="M4 12C4 14.5 4 17 8 17H16C20 17 20 14.5 20 12"></path>
+                                    <line x1="12" y1="17" x2="12" y2="22"></line>
+                                </svg>
+                                <span>85-120m²</span>
+                            </div>
+                            <div class="spec-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12,6 12,12 16,14"></polyline>
+                                </svg>
+                                <span>Entregue</span>
+                            </div>
+                        </div>
+                        <div class="project-cta">
+                            <button type="button" class="btn btn-outline" data-modal-trigger>Saiba Mais</button>
+                            <button type="button" class="btn btn-outline" data-location-trigger data-location-address="Endereço a definir" data-location-url="https://www.google.com/maps/place/Vitalis+Empreendimentos/data=!4m2!3m1!1s0x0:0x9548fff714355653?sa=X&amp;ved=1t:2428&amp;ictx=111">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10C21 17 12 23 12 23S3 17 3 10A9 9 0 0 1 12 1A9 9 0 0 1 21 10Z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                Mapa
+                            </button>
+                            <a href="https://wa.me/5511998925853?text=Gostaria de saber mais sobre o Edifício Inovação" class="btn btn-whatsapp" target="_blank" aria-label="Contato via WhatsApp" title="WhatsApp">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.863 3.488"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- More project cards will be generated dynamically -->
+            </div>
+            
+            <div class="projects-cta" data-aos="fade-up" data-aos-delay="400">
+                <a href="#projects" class="btn btn-primary" data-filter-all-trigger>
+                    <span>Ver Todos os Empreendimentos</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7,7 17,7 17,17"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Serviços</span>
+                <h2 class="section-title">Soluções <span class="text-gradient">Completas</span></h2>
+                <p class="section-description">
+                    Da concepção à entrega das chaves, oferecemos um serviço 360° 
+                    com a mais alta qualidade e inovação.
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="1,6 1,22 8,18 16,22 23,18 23,2 16,6 8,2"></polygon>
+                            <line x1="8" y1="2" x2="8" y2="18"></line>
+                            <line x1="16" y1="6" x2="16" y2="22"></line>
+                        </svg>
+                    </div>
+                    <h3>Projetos Arquitetônicos</h3>
+                    <p>Desenvolvimento completo de projetos com modelagem 3D e realidade virtual para visualização prévia.</p>
+                    <ul class="service-features">
+                        <li>Modelagem 3D avançada</li>
+                        <li>Tour virtual imersivo</li>
+                        <li>Aprovação municipal</li>
+                        <li>Sustentabilidade integrada</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9L12 2L21 9V20A2 2 0 0 1 19 22H5A2 2 0 0 1 3 20V9Z"></path>
+                            <polyline points="9,22 9,12 15,12 15,22"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Construção Civil</h3>
+                    <p>Execução de obras com metodologia BIM, gestão de qualidade certificada e cronograma rigoroso.</p>
+                    <ul class="service-features">
+                        <li>Metodologia BIM</li>
+                        <li>Qualidade certificada</li>
+                        <li>Cronograma otimizado</li>
+                        <li>Materiais premium</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3>Smart Home</h3>
+                    <p>Integração de tecnologia IoT e automação residencial para máximo conforto e eficiência.</p>
+                    <ul class="service-features">
+                        <li>Automação completa</li>
+                        <li>Controle por app</li>
+                        <li>Eficiência energética</li>
+                        <li>Segurança integrada</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M19.4 15A1.65 1.65 0 0 0 21 13.35A1.65 1.65 0 0 0 19.4 11.65A1.65 1.65 0 0 0 17.75 13.35A1.65 1.65 0 0 0 19.4 15Z"></path>
+                            <path d="M19.4 15L21 21L16 19L12 21L8 19L3 21L4.6 15"></path>
+                            <path d="M12 8V12"></path>
+                        </svg>
+                    </div>
+                    <h3>Certificações</h3>
+                    <p>Obtenção de certificações ambientais e de qualidade para valorização do seu investimento.</p>
+                    <ul class="service-features">
+                        <li>LEED Certification</li>
+                        <li>AQUA-HQE</li>
+                        <li>ISO 9001</li>
+                        <li>Procel Edifica</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Section (temporariamente oculta a pedido do cliente)
+    <section id="investment" class="investment">
+        <div class="container">
+            <div class="investment-grid">
+                <div class="investment-content" data-aos="fade-right">
+                    <span class="section-badge">Oportunidades</span>
+                    <h2 class="section-title">Encontre o <span class="text-gradient">Imóvel</span> Ideal</h2>
+                    <p class="section-description">
+                        Nossos empreendimentos oferecem as melhores opções para compra ou locação. 
+                        Apartamentos e casas com localização privilegiada e acabamento de primeira.
+                    </p>
+                    
+                    <div class="investment-benefits">
+                        <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="benefit-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="1" x2="12" y2="23"></line>
+                                    <path d="M17 5H9.5A3.5 3.5 0 0 0 6 8.5V15A3.5 3.5 0 0 0 9.5 18.5H17"></path>
+                                    <path d="M17 5L20 8L17 11"></path>
+                                    <path d="M17 18L20 15L17 12"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Valorização Comprovada</h3>
+                                <p>Histórico de 15-25% de valorização anual nos últimos 5 anos</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="benefit-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <path d="M21 21L16.65 16.65"></path>
+                                    <circle cx="11" cy="8" r="2"></circle>
+                                    <path d="M11 14A4 4 0 0 1 7 10"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Localização Estratégica</h3>
+                                <p>Regiões de alta valorização na Grande São Paulo</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="benefit-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 12L11 14L22 3"></path>
+                                    <path d="M21 12V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H16"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Transparência Total</h3>
+                                <p>Acompanhe todo o processo com relatórios mensais detalhados</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="investment-cta" data-aos="fade-up" data-aos-delay="400">
+                        <a href="#contact" class="btn btn-primary">Ver Disponíveis</a>
+                        <a href="https://wa.me/5511998925853?text=Gostaria de conhecer os imóveis disponíveis" class="btn btn-secondary" target="_blank">
+                            Falar com Consultor
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="investment-visual" data-aos="fade-left" data-aos-delay="200">
+                    <div class="roi-calculator">
+                        <h3>Simulador de Financiamento</h3>
+                        <div class="calculator-form">
+                            <div class="input-group">
+                                <label>Valor do Investimento</label>
+                                <input type="text" id="investment-amount" placeholder="R$ 500.000" value="R$ 500.000">
+                            </div>
+                            <div class="input-group">
+                                <label>Período (anos)</label>
+                                <input type="range" id="investment-period" min="1" max="10" value="5">
+                                <span class="range-value">5 anos</span>
+                            </div>
+                            <div class="calculator-result">
+                                <div class="result-item">
+                                    <span>Valor Estimado</span>
+                                    <strong id="estimated-value">R$ 976.563</strong>
+                                </div>
+                                <div class="result-item">
+                                    <span>Retorno Total</span>
+                                    <strong id="total-return" class="text-success">+95,31%</strong>
+                                </div>
+                                <div class="result-item">
+                                    <span>ROI Anual</span>
+                                    <strong id="annual-roi" class="text-success">19,06%</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="success-case" data-aos="zoom-in" data-aos-delay="400">
+                        <h4>Case de Sucesso</h4>
+                        <div class="case-stats">
+                            <div class="case-stat">
+                                <span class="stat-value">142%</span>
+                                <span class="stat-label">ROI em 3 anos</span>
+                            </div>
+                            <div class="case-stat">
+                                <span class="stat-value">R$ 650k</span>
+                                <span class="stat-label">Investimento inicial</span>
+                            </div>
+                            <div class="case-stat">
+                                <span class="stat-value">R$ 1.57M</span>
+                                <span class="stat-label">Valor atual</span>
+                            </div>
+                        </div>
+                        <p class="case-description">
+                            "Edifício Excellence - Moema"<br>
+                            <small>Entregue em dezembro de 2021</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">FAQ</span>
+                <h2 class="section-title">Perguntas <span class="text-gradient">Frequentes</span></h2>
+                <p class="section-description">
+                    Esclarecemos as principais dúvidas sobre nossos empreendimentos e processo de compra/locação.
+                </p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <button class="faq-question">
+                        <span>Qual o prazo médio de entrega dos projetos?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nossos projetos residenciais têm prazo médio de entrega entre 18 a 24 meses, dependendo da complexidade. Utilizamos metodologia BIM e gestão ágil para garantir cronogramas precisos e entregas pontuais.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <button class="faq-question">
+                        <span>Quais são as formas de pagamento disponíveis?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Oferecemos diversas modalidades: financiamento bancário, parcelamento direto com a construtora, consórcio imobiliário e pagamento à vista com descontos especiais. Nossa equipe financeira personaliza a melhor opção para seu perfil.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <button class="faq-question">
+                        <span>Os empreendimentos possuem certificação ambiental?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! 100% dos nossos projetos possuem certificação sustentável (LEED, AQUA-HQE ou Procel Edifica). Investimos em eficiência energética, reuso de água e materiais eco-friendly em todos os empreendimentos.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <button class="faq-question">
+                        <span>É possível acompanhar o andamento da obra?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutamente! Disponibilizamos acesso ao portal do cliente com fotos mensais, relatórios de progresso, webcam ao vivo da obra e cronograma atualizado. Também organizamos visitas técnicas quinzenais.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+                    <button class="faq-question">
+                        <span>Qual a garantia oferecida após a entrega?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Oferecemos 5 anos de garantia estrutural, 2 anos para instalações elétricas e hidráulicas, e 1 ano para acabamentos. Além disso, temos uma equipe de pós-vendas dedicada para suporte contínuo.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                    <button class="faq-question">
+                        <span>Como funciona a tecnologia Smart Home?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nossos empreendimentos incluem automação residencial com controle via app: iluminação inteligente, climatização automática, sistema de segurança integrado, e monitoramento de consumo energético. Tudo pré-instalado e configurado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Contato</span>
+                <h2 class="section-title">Vamos Construir <span class="text-gradient">Juntos</span></h2>
+                <p class="section-description">
+                    Entre em contato conosco e transforme seu sonho em realidade com a qualidade Vitalis.
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92V19A2 2 0 0 1 20.18 21 19.79 19.79 0 0 1 11.55 17.93 19.5 19.5 0 0 1 5.55 11.93 19.79 19.79 0 0 1 1.07 3.25A2 2 0 0 1 3 1.18H5.08A2 2 0 0 1 7 2.72L7.4 5.53A2 2 0 0 1 6.85 7.09L5.6 8.34A16 16 0 0 0 15.66 18.4L16.91 17.15A2 2 0 0 1 18.47 16.6L21.28 17A2 2 0 0 1 22.82 19.08V19Z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Telefone/WhatsApp</h3>
+                            <p>+55 (11) 99892-5853</p>
+                            <a href="https://wa.me/5511998925853" class="contact-link" target="_blank">
+                                Iniciar conversa
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7,7 17,7 17,17"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>E-mail</h3>
+                            <p>contato@vitalisempreendimentos.com.br</p>
+                            <a href="mailto:contato@vitalisempreendimentos.com.br" class="contact-link">
+                                Enviar email
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7,7 17,7 17,17"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10C21 17 12 23 12 23S3 17 3 10A9 9 0 0 1 12 1A9 9 0 0 1 21 10Z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Escritório</h3>
+                            <p>Rua Serra de Botucatu, 878 - CJ 1503</p>
+                            <p>São Paulo - SP</p>
+                            <a href="https://www.google.com/maps/place/Vitalis+Empreendimentos/@-23.5431389,-46.5632446,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce5f82e7d4b39b:0x9548fff714355653!8m2!3d-23.5431389!4d-46.5632446!16s%2Fg%2F11z71jv669?entry=ttu&amp;g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D" class="contact-link" target="_blank">
+                                Ver no mapa
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7,7 17,7 17,17"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Siga-nos</h3>
+                        <div class="social-grid">
+                            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987C.029 17.396 3.904 21.989 9.071 23.264V15.133H6.53V11.987H9.071V9.348C9.071 6.829 10.683 5.324 12.973 5.324C14.059 5.324 15.197 5.528 15.197 5.528V8.014H13.948C12.718 8.014 12.283 8.78 12.283 9.567V11.987H15.086L14.595 15.133H12.283V23.264C17.45 21.989 21.325 17.396 21.325 11.987C21.325 5.367 15.958.001 12.337.001L12.017 0Z"/>
+                                </svg>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                                </svg>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container" data-aos="fade-left">
+                    <form class="contact-form" id="contact-form" action="https://formsubmit.co/marcelo.leobaldo@gmail.com" method="POST" novalidate>
+                        <h3>Envie sua mensagem</h3>
+                        <p>Preencha o formulário e entraremos em contato em até 2 horas.</p>
+
+                        <input type="hidden" name="_subject" value="Novo contato via site - Vitalis Empreendimentos">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nome completo</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefone/WhatsApp</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Conte-nos mais sobre seu projeto ou interesse..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="consent" name="consent" required>
+                                <span class="checkmark"></span>
+                                <span>Concordo em receber contatos da Vitalis Empreendimentos e aceito a <a href="#" data-privacy-trigger>Política de Privacidade</a></span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Enviar Mensagem</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22,2 15,22 11,13 2,9"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <svg viewBox="0 0 220 180" class="logo">
+                            <path d="M14,108 L86,46 L152,104 M18,105 L18,162 M148,101 L148,162 M10,162 L152,162"/>
+                            <path d="M128,162 L128,88 M116,92 L128,74 M128,88 L150,100 M150,162 L150,100 M168,162 L168,66 L200,30 L200,162 M122,162 L206,162"/>
+                        </svg>
+                        <span class="logo-wordmark">
+                            <span class="logo-name">Vitalis</span>
+                            <span class="logo-subtitle">Empreendimentos</span>
+                        </span>
+                    </a>
+                    <p class="footer-description">
+                        Construindo conquistas com solidez e confiança. Há mais de 20 anos
+                        desenvolvendo empreendimentos únicos na Grande São Paulo.
+                    </p>
+                    <div class="footer-certifications">
+                        <div class="cert-item">
+                            <span class="cert-badge">ISO 9001</span>
+                            <span class="cert-label">Qualidade</span>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-badge">LEED</span>
+                            <span class="cert-label">Sustentabilidade</span>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-badge">SECOVI</span>
+                            <span class="cert-label">Membro</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#about">Nossa História</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                        <li>Portal do Cliente <span class="coming-soon">(Em breve)</span></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <div class="contact-item-small">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92V19A2 2 0 0 1 20.18 21 19.79 19.79 0 0 1 11.55 17.93 19.5 19.5 0 0 1 5.55 11.93 19.79 19.79 0 0 1 1.07 3.25A2 2 0 0 1 3 1.18H5.08A2 2 0 0 1 7 2.72L7.4 5.53A2 2 0 0 1 6.85 7.09L5.6 8.34A16 16 0 0 0 15.66 18.4L16.91 17.15A2 2 0 0 1 18.47 16.6L21.28 17A2 2 0 0 1 22.82 19.08V19Z"></path>
+                        </svg>
+                        <span>+55 (11) 99892-5853</span>
+                    </div>
+                    <div class="contact-item-small">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>contato@vitalisempreendimentos.com.br</span>
+                    </div>
+                    <div class="contact-item-small">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10C21 17 12 23 12 23S3 17 3 10A9 9 0 0 1 12 1A9 9 0 0 1 21 10Z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>Rua Serra de Botucatu, 878 - CJ 1503<br>São Paulo - SP</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2026 Vitalis Empreendimentos. Todos os direitos reservados.</p>
+                    <p>Desenvolvido por <span class="text-gradient">Vitalis Empreendimentos</span></p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link-small" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="white"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link-small" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.017 0C5.396 0 .029 5.367.029 11.987C.029 17.396 3.904 21.989 9.071 23.264V15.133H6.53V11.987H9.071V9.348C9.071 6.829 10.683 5.324 12.973 5.324C14.059 5.324 15.197 5.528 15.197 5.528V8.014H13.948C12.718 8.014 12.283 8.78 12.283 9.567V11.987H15.086L14.595 15.133H12.283V23.264C17.45 21.989 21.325 17.396 21.325 11.987C21.325 5.367 15.958.001 12.337.001L12.017 0Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div class="project-modal" id="project-modal" aria-hidden="true">
+        <div class="project-modal-overlay" data-modal-close></div>
+        <div class="project-modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+            <button type="button" class="project-modal-close" data-modal-close aria-label="Fechar">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="project-modal-gallery" id="modal-gallery">
+                <div class="modal-gallery-main">
+                    <button type="button" class="gallery-nav gallery-prev" data-gallery-prev aria-label="Foto anterior">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="15,18 9,12 15,6"></polyline>
+                        </svg>
+                    </button>
+                    <img id="modal-gallery-image" class="modal-gallery-image" src="" alt="" data-gallery-zoom>
+                    <button type="button" class="gallery-nav gallery-next" data-gallery-next aria-label="Próxima foto">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9,18 15,12 9,6"></polyline>
+                        </svg>
+                    </button>
+                    <span class="modal-gallery-counter" id="modal-gallery-counter"></span>
+                </div>
+                <div class="modal-gallery-thumbs" id="modal-gallery-thumbs"></div>
+            </div>
+            <div class="project-modal-body">
+                <div class="project-modal-badges" id="modal-badges"></div>
+                <h3 class="project-modal-title" id="modal-project-title"></h3>
+                <p class="project-modal-description" id="modal-description"></p>
+                <div class="project-modal-specs" id="modal-specs"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Lightbox (zoom) -->
+    <div class="image-lightbox" id="image-lightbox" aria-hidden="true">
+        <button type="button" class="image-lightbox-close" data-lightbox-close aria-label="Fechar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <button type="button" class="image-lightbox-nav lightbox-prev" data-lightbox-prev aria-label="Anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15,18 9,12 15,6"></polyline>
+            </svg>
+        </button>
+        <img id="lightbox-image" src="" alt="">
+        <button type="button" class="image-lightbox-nav lightbox-next" data-lightbox-next aria-label="Próxima">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9,18 15,12 9,6"></polyline>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Project Location Modal -->
+    <div class="project-modal location-modal" id="location-modal" aria-hidden="true">
+        <div class="project-modal-overlay" data-location-close></div>
+        <div class="project-modal-content location-modal-content" role="dialog" aria-modal="true" aria-labelledby="location-modal-title">
+            <button type="button" class="project-modal-close" data-location-close aria-label="Fechar">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="location-modal-map">
+                <iframe id="location-modal-iframe" src="" title="Mapa da localização" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="project-modal-body">
+                <h3 class="project-modal-title" id="location-modal-title"></h3>
+                <p class="location-modal-address" id="location-modal-address"></p>
+                <a href="#" class="btn btn-primary" id="location-modal-link" target="_blank" rel="noopener noreferrer">
+                    <span>Abrir no Google Maps</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7,7 17,7 17,17"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div class="project-modal privacy-modal" id="privacy-modal" aria-hidden="true">
+        <div class="project-modal-overlay" data-privacy-close></div>
+        <div class="project-modal-content privacy-modal-content" role="dialog" aria-modal="true" aria-labelledby="privacy-modal-title">
+            <button type="button" class="project-modal-close" data-privacy-close aria-label="Fechar">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="privacy-modal-header">
+                <h3 class="project-modal-title" id="privacy-modal-title">Política de Privacidade</h3>
+            </div>
+            <div class="privacy-modal-body">
+                <div class="privacy-modal-text">
+                    <p><em>Texto de exemplo — substituir pelo conteúdo oficial revisado pelo time jurídico da Vitalis Empreendimentos antes de publicar o site.</em></p>
+
+                    <h4>1. Coleta de informações</h4>
+                    <p>Coletamos as informações que você nos fornece diretamente ao preencher formulários em nosso site, como nome, e-mail, telefone e mensagem, com o objetivo de responder às suas solicitações de contato.</p>
+
+                    <h4>2. Uso das informações</h4>
+                    <p>As informações coletadas são utilizadas exclusivamente para retornar seu contato, apresentar nossos empreendimentos e, quando autorizado, enviar comunicações sobre novidades da Vitalis Empreendimentos.</p>
+
+                    <h4>3. Compartilhamento de dados</h4>
+                    <p>Não compartilhamos, vendemos ou alugamos suas informações pessoais a terceiros, exceto quando exigido por lei ou necessário para a prestação dos nossos serviços.</p>
+
+                    <h4>4. Armazenamento e segurança</h4>
+                    <p>Adotamos medidas técnicas e organizacionais razoáveis para proteger seus dados contra acesso não autorizado, perda ou alteração indevida.</p>
+
+                    <h4>5. Seus direitos</h4>
+                    <p>Você pode, a qualquer momento, solicitar a confirmação, correção ou exclusão dos seus dados pessoais, bem como revogar o consentimento para recebimento de comunicações, entrando em contato pelos canais informados nesta página.</p>
+
+                    <h4>6. Contato</h4>
+                    <p>Em caso de dúvidas sobre esta Política de Privacidade, entre em contato conosco pelo e-mail contato@vitalisempreendimentos.com.br.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
